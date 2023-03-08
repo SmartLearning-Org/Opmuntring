@@ -1,0 +1,49 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+blockquote {
+    position: relative;
+    font-style: italic;
+    color: #333;
+    padding: 1em;
+    margin: 1em 0;
+}
+
+    blockquote::after {
+        content: '\201C';
+    }
+
+    blockquote::before, 
+    blockquote::after {        
+        font-size: 4em;
+        position: absolute;
+        color: #ccc;
+    }
+
+    blockquote::before {
+        top: -0.5em;
+        left: -0.1em;
+        content: '\201D';
+    }
+
+    blockquote::after {
+        bottom: -0.7em;
+        right: -0.1em;
+    }
+
