@@ -35,9 +35,9 @@ namespace Opmuntring.Pages
                 Errors.Add("Jeg havde regnet med at få indsendt et felt, der hedder fag, men det fik jeg ikke");
             } else
             {
-                if (fag != "Webudvikling" && fag != "Cloud" && fag != "Webprogrammering frontend")
+                if (fag != "Webudvikling" && fag != "Cloud" && fag != "Frontendprogrammering")
                 {
-                    Errors.Add($"Jeg kender kun fagene Webudvikling, Cloud, og Webprogrammering frontend. Du indsendte {fag}");
+                    Errors.Add($"Jeg kender kun fagene Webudvikling, Cloud, og Frontendprogrammering. Du indsendte {fag}");
                 }
             }
 
@@ -47,7 +47,7 @@ namespace Opmuntring.Pages
             }
             else
             {
-                if (tidspunkt != "morgen" && fag != "eftermiddag" && fag != "aften")
+                if (tidspunkt != "morgen" && tidspunkt != "eftermiddag" && tidspunkt != "aften")
                 {
                     Errors.Add($"Jeg kender kun tidspunkterne morgen, eftermiddag og aften. Du indsendte {tidspunkt}");
                 }
